@@ -1,0 +1,141 @@
+/* Imagen de fondo */
+body {
+  background-color: whitesmoke;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.to-do {
+  padding: 3rem;
+  border: 0.2rem solid black;
+  border-radius: 1rem;
+  width: 70%;
+  max-width: 80rem;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 1.6rem;
+  box-shadow: 0 0.4rem 3rem rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0.5rem);
+  -webkit-backdrop-filter: blur(0.5rem);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.input input {
+  width: calc(100% - 10rem);
+  height: 3rem;
+  padding: 0.5rem;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+}
+
+.input button {
+  height: 3rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.info-titulo {
+  display: flex;
+  gap: 2rem;
+  font-weight: bold;
+}
+
+.conteo {
+  margin-top: 1rem;
+}
+
+.conteo p {
+  margin: 0.5rem 0;
+}
+
+.conteo #total,
+.conteo #realizadas {
+  font-weight: bold;
+  color: green;
+}
+
+.tabla th,
+.tabla td {
+  padding: 1rem;
+  border: 0.1rem solid #ccc;
+}
+
+.tabla td.id-container {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.tabla td.checkbox-container {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.tabla th {
+  background-color: #f0f0f0;
+}
+
+.tabla button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 320px) {
+  body {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .to-do {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .tabla th,
+  .tabla td {
+    padding: 0.5rem;
+  }
+
+  .info {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+  .to-do {
+    width: 90%;
+    padding: 2rem;
+  }
+
+  .contenedor {
+    flex-direction: column;
+  }
+
+  .tabla {
+    overflow-x: auto;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .to-do {
+    width: 80%;
+  }
+}

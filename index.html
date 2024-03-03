@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/CSS/styles.css" />
+    <title>To do List</title>
+  </head>
+  <body>
+    <div class="contenedor">
+      <div class="to-do">
+        <div class="titulo">
+          <h1>To do List</h1>
+          <hr />
+          <p>Nueva tarea</p>
+        </div>
+        <div class="input">
+          <input type="text" placeholder=" Ingresa tarea." id="nuevaTarea" />
+          <button id="agregarTarea">Agregar</button>
+        </div>
+        <div class="info">
+          <div class="info-tareas">
+            <div class="conteo">
+              <p>Total: <span id="total">0</span></p>
+              <p>Realizadas: <span id="realizadas">0</span></p>
+            </div>
+          </div>
+          <div class="tabla">
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Tarea</th>
+                  <th>Estado</th>
+                  <th>Acción</th>
+                </tr>
+              </thead>
+              <tbody id="tareas"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/JS/script.js"></script>
+  </body>
+</html>
